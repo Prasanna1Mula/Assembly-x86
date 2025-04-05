@@ -8,3 +8,9 @@ A growing collection of **well-commented** x86 assembly programs for learning lo
 
 ### 🔢 Arithmetic Operations
 - [16-bit Addition](arithmetic/addition.asm) - Adds two numbers
+
+### 🧠 Core Concept
+```asm
+mov ax, [num1]    ; Load first number into AX register
+add ax, [num2]    ; Add second number to AX
+mov [result], ax   ; Store result in memory
