@@ -14,3 +14,7 @@ A growing collection of **well-commented** x86 assembly programs for learning lo
 mov ax, [num1]    ; Load first number into AX register
 add ax, [num2]    ; Add second number to AX
 mov [result], ax   ; Store result in memory
+
+---
+
+- [Multiplication](Multiplication.asm) - Multiplies two numbers 
