@@ -14,6 +14,11 @@ A growing collection of **well-commented** x86 assembly programs for learning lo
 mov ax, [num1]    ; Load first number into AX register
 add ax, [num2]    ; Add second number to AX
 mov [result], ax   ; Store result in memory
+```
+- [Multiplication](Multiplication.asm) - Multiply two numbers
 
----
-
+### 🧠 Core Concept
+```asm
+mov al, NUM1  ; Load first number into AL register
+mov bl, NUM2 ; Load second number into BL register
+mul bl ; multiplies AL*BL and stores values in another register 
