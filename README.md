@@ -17,4 +17,3 @@ mov [result], ax   ; Store result in memory
 
 ---
 
-- [Multiplication](Multiplication.asm) - Multiplies two numbers 
