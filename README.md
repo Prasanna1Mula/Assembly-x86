@@ -22,3 +22,12 @@ mov [result], ax   ; Store result in memory
 mov al, NUM1  ; Load first number into AL register
 mov bl, NUM2 ; Load second number into BL register
 mul bl ; multiplies AL*BL and stores values in another register 
+```
+- [Division](Division.asm) - Division of two numbers
+
+### 🧠 Core Concept
+```asm
+mov AX, num1 ; Load 1st number (quotient)  into AX register
+mov DX, 0 ; clear DX
+mov BX, num2 ; Load 2nd number (remainder) into BX register
+div BX ; 
