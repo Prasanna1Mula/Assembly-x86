@@ -30,4 +30,5 @@ mul bl ; multiplies AL*BL and stores values in another register
 mov AX, num1 ; Load 1st number (quotient)  into AX register
 mov DX, 0 ; clear DX
 mov BX, num2 ; Load 2nd number (remainder) into BX register
-div BX ; 
+div BX ; AX/BX -> quotient in AX, remainder into DX
+```
