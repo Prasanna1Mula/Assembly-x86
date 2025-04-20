@@ -1,0 +1,9 @@
+.MODEL SMALL 
+.STACK 10H
+.CODE 
+
+MAIN:
+  MOV CX, 10H
+  MOC BL, '1'
+
+NEXT
