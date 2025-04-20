@@ -32,3 +32,30 @@ mov DX, 0 ; clear DX
 mov BX, num2 ; Load 2nd number (remainder) into BX register
 div BX ; AX/BX -> quotient in AX, remainder into DX
 ```
+### 📜 Loop Operation
+-[loop of numbers](loop.asm) - Loop of numbers from 1 to 10 
+
+### 🧠 Core Concept
+
+```asm
+mov CX, 10
+mov AX, 1
+print_loop:
+   ; Display AX (implementation omitted)
+   inc AX
+   loop print_loop  ; CX-- then jump if CX≠0
+```
+
+---
+
+## 🛠️ Setup Instructions
+
+### Requirements
+- NASM assembler
+- DOSBox or EMU8086 emulator
+- (Optional) ALINK linker
+
+### How to Run
+1. Assemble the program:
+   ```sh
+   nasm -f bin program.asm -o program.com
