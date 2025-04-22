@@ -45,8 +45,23 @@ print_loop:
    inc AX
    loop print_loop  ; CX-- then jump if CX≠0
 ```
+-[Ascending Order of Numbers](ascOrder.asm) - Arranging numbers in ascending order 
 
----
+### 🧠 Core Concept
+
+```asm
+MOV CH, 04H
+UP2: CL, 04H
+LEA SI, STRING1
+CMP AL, BL ; After initialising both the registers (source index need to be initiated as well)
+JC DOWN ; Move the number down which was comparred 
+
+DOWN: INC SI ; Increment of SI
+DEC CL 
+JNZ UP1 ; If non zero then jump to UP1 
+DEC CH
+JNZ UP2 ; If non zero then jump to UP2 
+```
 
 ## 🛠️ Setup Instructions
 
