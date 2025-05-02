@@ -62,6 +62,36 @@ JNZ UP1 ; If non zero then jump to UP1
 DEC CH
 JNZ UP2 ; If non zero then jump to UP2 
 ```
+### 🧠 Core Concept
+```asm
+; Assume input is in an array 'str' of length 'len'
+
+mov ecx, 0              ; index from start
+mov edx, len            ; index from end
+dec edx                 ; make it zero-based
+
+pal_check:
+    cmp ecx, edx
+    jge done            ; if indices meet/cross, it's a palindrome
+    mov al, [str + ecx]
+    mov bl, [str + edx]
+    cmp al, bl
+    jne not_palindrome
+    inc ecx
+    dec edx
+    jmp pal_check
+
+done:
+    ; palindrome confirmed
+    ; (add your logic here)
+    jmp end
+
+not_palindrome:
+    ; not a palindrome
+    ; (add your logic here)
+
+end:
+```
 
 ## 🛠️ Setup Instructions
 
